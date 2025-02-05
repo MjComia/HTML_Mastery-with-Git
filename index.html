@@ -10,16 +10,16 @@
         <h1>Get to know about me!</h1>
     </header>
     <nav>
-        <a>Home</a> |
-        <a>About</a> |
-        <a>Contact</a>
+        <a href ="#home">Home</a> |
+        <a href = "#about">About</a> |
+        <a href = "#contact">Contact</a>
     </nav>
     <hr>
     <main>
-        <section class = "Home">
-                <h3>Hello there user! I am Mark Joel Comia</h3>
+        <section class = "Home" id = "home">
+        <h1>Hello there user! I am Mark Joel Comia</h1>
         <article>
-            <img src = "pic-and-vids/img_me.jpg">
+            <img src = "pic-and-vids/img_me.jpg" style = "height : 300px" alt = "Mark Joel Comia">
             <p>I am a 3rd year student at Technological University of the Philippines.
             And I am currently taking Bachelorof Science in Information System.
             I am a person who is very passionate in learning new things and I am very
@@ -29,15 +29,16 @@
         </section>
     </main>
     <hr>
-        <section class = "About">
+        <section class = "About" id = "about">
+            <h2>Get to know about me!</h2>
             <article>
-                <h3>Get to know about me!</h3>
                 <p>I live in Marikina City, the cleanest city in Metro Manila! I am currently 21 years old.
                     I love to workout and play soccer. I am a huge fan of Lionel Messi and FC Barcelona. Since I live in the 
                     Philippines, which basketball is the most popular sport, I only play several times a week.
-                    In my spare time, I study programming languages and develop websites.
-                    <img src = "https://www.investopedia.com/thmb/ckPwC5ARwco1nOSCKVGE57se8MI=/1500x0/filters:no_upscale():max_bytes(150000):strip_icc()/GettyImages-1245748917-99e3329a7b8147e8ab648806220ce153.jpg">
-                </p>
+                    In my spare time, I study programming languages and develop websites.</p>
+                    <img src = "https://www.investopedia.com/thmb/ckPwC5ARwco1nOSCKVGE57se8MI=/1500x0/filters:no_upscale():max_bytes(150000):strip_icc()/GettyImages-1245748917-99e3329a7b8147e8ab648806220ce153.jpg"
+                    style = "height : 300px" alt = "Lionel Messi">
+                
                 <h3>Hobbies</h3>
                 <p>One of my favorite hobby is reading books.</p>
                 <p>The books that I already read is in the following list:</p>
@@ -59,11 +60,24 @@
             </article>
         </section>
         <hr>
-        <section class = "Contact">
-        <h3>Contact me!</h3>
+        <section class = "Socials">
+        <h3>Socials</h3>
             <a href="https://github.com/MjComia" target="_blank">Click here to visit my Github</a> <br>
             <a href="https://x.com/MarkjoelComia" target ="_blank">Click here to visit my X profile</a> <br>
             <a href="https://www.facebook.com/goddeymm" target="_blank">Click here to visit my Facebook</a> <br>
+        </section>
+        <hr>
+    
+        <section class = "Contact" id = "contact">
+            <h3>Contact me!</h3>
+            <form>
+                <label for = "name">Name:</label>
+                <input type = "text" id = "name"> <br>
+                <label for = "email">Email:</label>
+                <input type = "email" id = "email"> <br>
+                <label for = "message">Message:</label>
+                <textarea id = "message"></textarea>
+            </form>
         </section>
 </body>
 </html>
